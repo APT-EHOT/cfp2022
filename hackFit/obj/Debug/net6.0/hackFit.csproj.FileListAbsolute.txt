@@ -1,0 +1,15 @@
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/bin/Debug/net6.0/hackFit
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/bin/Debug/net6.0/hackFit.deps.json
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/bin/Debug/net6.0/hackFit.runtimeconfig.json
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/bin/Debug/net6.0/hackFit.dll
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/bin/Debug/net6.0/hackFit.pdb
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.csproj.AssemblyReference.cache
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.GeneratedMSBuildEditorConfig.editorconfig
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.AssemblyInfoInputs.cache
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.AssemblyInfo.cs
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.csproj.CoreCompileInputs.cache
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.dll
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/refint/hackFit.dll
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.pdb
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/hackFit.genruntimeconfig.cache
+/Users/asmirnov/RiderProjects/cfp2022/hackFit/obj/Debug/net6.0/ref/hackFit.dll

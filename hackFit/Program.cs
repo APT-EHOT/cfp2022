@@ -3,9 +3,9 @@ using hack;
 
 DateTime startAt = DateTime.Now;
 const int TAKE_IN_RESULT = 10000;
-var filePath = "/Users/asmirnov/Downloads/hackFit/DS_train(2020-06--2022-06-01).csv";
-var outputPath = "/Users/asmirnov/Downloads/hackFit/result.csv";
-var yTrainPath = "/Users/asmirnov/Downloads/hackFit/y_train.csv";
+var filePath = "/Users/asmirnov/Downloads/hack/DS_train(2020-06--2022-06-01).csv";
+var outputPath = "/Users/asmirnov/Downloads/hack/result.csv";
+var yTrainPath = "/Users/asmirnov/Downloads/hack/y_train.csv";
 
 var YHelper = new YTrain(yTrainPath);
 
