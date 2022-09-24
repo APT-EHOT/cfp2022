@@ -16,7 +16,7 @@ static RowCollector NewCollector()
 {
     var processor = new PreProcessor(10, 1.4f, 10000);
     var minDate = new DateTime(2020, 6, 1);
-    var maxDate = new DateTime(2022, 6, 1);
+    var maxDate = new DateTime(2022, 4, 1);
     return new RowCollector(minDate, maxDate, processor);
 }
 
