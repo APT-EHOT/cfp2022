@@ -10,10 +10,10 @@ import pandas as pd
 
 
 def main():
-    train_df = pd.read_csv("predict1.csv")
+    train_df = pd.read_csv("predict2.csv")
 
     model = CatBoostRegressor()
-    model.load_model('catboost_model1.dump')
+    model.load_model('catboost_model2.dump')
 
     predicts = model.predict(train_df)
     print(predicts)
