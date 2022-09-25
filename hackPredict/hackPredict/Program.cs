@@ -2,7 +2,7 @@
 using hack;
 
 DateTime startAt = DateTime.Now;
-const int TAKE_IN_RESULT = 5000;
+const int TAKE_IN_RESULT = 10000;
 const int D = 2; // TODO Изменить на нужное 
 var filePath = "/Users/asmirnov/Downloads/hack/DS_train(2020-06--2022-06-01).csv";
 var outputPath = "/Users/asmirnov/Downloads/hack/predict.csv";
@@ -12,7 +12,7 @@ var collector = NewCollector();
 var collectors = new List<RowCollector>();
 static RowCollector NewCollector()
 {
-    var processor = new PreProcessor(10, 1.4f, 10000);
+    var processor = new PreProcessor(10, 2f, 10000);
     var minDate = new DateTime(2021, 3, 1); // TODO поменять на нужное 
     var maxDate = new DateTime(2022, 4, 1); // TODO поменять на нужное 
     return new RowCollector(minDate, maxDate, processor);
@@ -92,7 +92,7 @@ using (var fs = new StreamWriter(outputPath, false))
         .Where(ds => ds.Ibc.Count(x => x == 0) <= 3)
         .OrderBy(ds => ds.Ibc.Sum())
         .ToList();
-    foreach (var ds in test.GetRange((int)(test.Count * 0.2), (int)(test.Count * 0.6)))
+    foreach (var ds in test)
     {
         sb = new StringBuilder();
         sb.Append($"{ds.DecadeCount},");
