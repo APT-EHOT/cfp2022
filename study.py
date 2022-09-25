@@ -10,17 +10,17 @@ import pandas as pd
 
 
 def main():
-    train_df = pd.read_csv("predict.csv")
+    train_df = pd.read_csv("result.csv")
 
-    model = CatBoostRegressor()
-    model.load_model('catboost_model.dump')
+    X = train_df.drop('y', axis=1)
+    y = train_df.y
 
-    predicts = model.predict(train_df)
-    print(predicts)
+    model = CatBoostRegressor(random_state=42, silent=True)
+    model.fit(
+        X, y
+    )
 
-    sum = 0
-    for predict in predicts:
-        sum = sum + predict
-    print(sum * 100 / len(predicts))
+    model.save_model('catboost_model.dump')
+
 
 main()
