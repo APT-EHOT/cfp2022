@@ -10,7 +10,7 @@ import pandas as pd
 
 
 def main():
-    train_df = pd.read_csv("result.csv")
+    train_df = pd.read_csv("result2.csv")
 
     X = train_df.drop('y', axis=1)
     y = train_df.y
@@ -20,7 +20,7 @@ def main():
         X, y
     )
 
-    model.save_model('catboost_model.dump')
+    model.save_model('catboost_model2.dump')
 
 
 main()
