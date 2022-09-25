@@ -10,7 +10,7 @@ import pandas as pd
 
 
 def main():
-    train_df = pd.read_csv("predict4.csv")
+    train_df = pd.read_csv("predict5.csv")
 
     model = CatBoostRegressor()
     model.load_model('catboost_model2.dump')
