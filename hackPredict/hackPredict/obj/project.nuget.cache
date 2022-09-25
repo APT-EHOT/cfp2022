@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2A1gN/bYNKCDTzfAOejhwdmAjiG3CcQLtCtXCjt9cevnn9/0SEpe3NYGkzlFw1/n41G5m+WUWMZB2yW262fNgQ==",
+  "dgSpecHash": "eQeldaguuVH/xwObZWoP9p81OGECNnaCx9THb7Q9u+Zap36GVtYB2c1iAtteoplThhBWRF3UeTCXQNp6LwGWJg==",
   "success": true,
-  "projectFilePath": "/Users/asmirnov/RiderProjects/hack/hackPredict/hackPredict/hackPredict.csproj",
+  "projectFilePath": "/Users/asmirnov/RiderProjects/cfp2022/hackPredict/hackPredict/hackPredict.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -2,7 +2,7 @@
 using hack;
 
 DateTime startAt = DateTime.Now;
-const int TAKE_IN_RESULT = 10000;
+const int TAKE_IN_RESULT = 5000;
 const int D = 2; // TODO Изменить на нужное 
 var filePath = "/Users/asmirnov/Downloads/hack/DS_train(2020-06--2022-06-01).csv";
 var outputPath = "/Users/asmirnov/Downloads/hack/predict.csv";
@@ -29,7 +29,6 @@ using (var fs = new StreamReader(new BufferedStream(File.OpenRead(filePath), 512
     var list = new List<Row>();
     while ((line = fs.ReadLine()) != null)
     {
-        if (i >= 10000) break;
         var values = line.Trim().Split();
         if (values[3] == OUT)
         {
@@ -88,8 +87,12 @@ using (var fs = new StreamWriter(outputPath, false))
     sb.Append(string.Join("", Enumerable.Range(0, 37).Select(x => $"ibc{x},")));
     sb.Remove(sb.Length - 1, 1); // Убираем запятую
     fs.WriteLine(sb.ToString());
-
-    foreach (var ds in dss)
+    
+    var test = dss
+        .Where(ds => ds.Ibc.Count(x => x == 0) <= 3)
+        .OrderBy(ds => ds.Ibc.Sum())
+        .ToList();
+    foreach (var ds in test.GetRange((int)(test.Count * 0.2), (int)(test.Count * 0.6)))
     {
         sb = new StringBuilder();
         sb.Append($"{ds.DecadeCount},");
